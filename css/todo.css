@@ -7,3 +7,6 @@
 .card-remove {
     display:inline-block;
 }
+#txtAddNote {
+    padding-top: 2em;
+}
