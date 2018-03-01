@@ -1,14 +1,15 @@
 class Note {
   constructor(title) {
     this.title = title;
-    // HINT🤩 this.element = this.createElement(title);
+    this.element = this.createElement(title);
   }
   
   createElement(title){
     let newNote = document.createElement('div');
-    
-    // HINT🤩 a.addEventListener('click', this.remove.bind(newNote));
-    
+    a.addEventListener('click', this.remove.bind(newNote));
+      
+    let txtInput = document.getElementById("txtAddNote").value;
+      
     return newNote;
   }
   
@@ -35,9 +36,12 @@ class App {
   
     // HINT🤩
     // clicking the button should work
+    document.querySelector("#btnAddNote").addEventListener('click', function() {
+        console.log("geklikt");
+    });
     // pressing the enter key should also work
     // this.btnAdd = ???
-    // this.btnAdd.addEventListener("click", this.createNote.bind(this));
+    //this.btnAdd.addEventListener("click", this.createNote.bind(this));
     // this.loadNotesFromStorage();
   }
   
