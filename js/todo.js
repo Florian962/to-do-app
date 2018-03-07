@@ -70,7 +70,7 @@ class App {
   createNote(e){
     // this function should create a new note by using the Note() class
     let txtInput = document.getElementById("txtAddNote").value; 
-    let note = Note(txtInput);
+    let note = new Note(txtInput);
     // HINT🤩
     note.add();
     note.saveToStorage();
