@@ -69,9 +69,9 @@ class App {
     // this function should create a new note by using the Note() class
     
     // HINT🤩
-    // note.add();
-    // note.saveToStorage();
-    // this.reset(); verwijst naar de app klasse
+    note.add();
+    note.saveToStorage();
+    this.reset(); //verwijst naar de app klasse
   }
   
   reset(){
