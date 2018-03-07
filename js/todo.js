@@ -7,6 +7,7 @@ class Note {
   createElement(title){
     //creeer de elementen in de div
     let newNote = document.createElement('div');
+    newNote.classname = "card";
     let txt = document.createElement('p');
     let remove = document.createElement('a');
     // steek txt en remove in note
@@ -17,7 +18,7 @@ class Note {
     remove.textContent = "remove";
     
     
-    a.addEventListener('click', this.remove.bind(newNote));
+    remove.addEventListener('click', this.remove.bind(newNote));
 
     return newNote;
   }
@@ -78,7 +79,7 @@ class App {
   }
   
   reset(){
-    document.getElementsByClassName("reset").reset();
+    document.getElementById("reset").reset();
   }
   
 }

@@ -1,6 +1,10 @@
 .card {
     margin: 1em; flex: 0 1 20%;
+    display: block;
+    float:left;
+    
 }
+
 .notes {
     align-items: center;
 }
