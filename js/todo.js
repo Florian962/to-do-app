@@ -51,6 +51,7 @@ class App {
     if (e.keyCode == 13) {
         // Do something
         click.click();
+        console.log("geenterd");
     }
 });
       
