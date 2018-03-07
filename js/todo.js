@@ -18,7 +18,7 @@ class Note {
     
     
     a.addEventListener('click', this.remove.bind(newNote));
-    let txtInput = document.getElementById("txtAddNote").value;
+
     return newNote;
   }
   
@@ -44,7 +44,7 @@ class App {
     console.log("👊🏼 The Constructor!");
     // clicking the button should work
     this.btnAdd = document.querySelector("#btnAddNote");
-    let click = this.btnAdd;  
+    let click = this.btnAdd; 
     // pressing the enter key should also work
     this.txtAdd = document.querySelector("#txtAddNote");
     let enter = this.txtAdd.addEventListener("keyup", function (e) {
@@ -68,7 +68,8 @@ class App {
    
   createNote(e){
     // this function should create a new note by using the Note() class
-    
+    let txtInput = document.getElementById("txtAddNote").value; 
+    let note = Note(txtInput);
     // HINT🤩
     note.add();
     note.saveToStorage();
