@@ -23,8 +23,9 @@ class Note {
   }
   
   add(){
-    // HINT🤩
-    // this function should append the note to the screen somehow
+      let wrapper = document.getElementsByClassName('notes')[0];
+      wrapper.appendChild(this.element);
+      
   }
   
   saveToStorage(){
