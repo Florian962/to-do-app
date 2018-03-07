@@ -42,14 +42,21 @@ class Note {
 class App {
   constructor() {
     console.log("👊🏼 The Constructor!");
-  
-    // HINT🤩
     // clicking the button should work
-    // pressing the enter key should also work
     this.btnAdd = document.querySelector("#btnAddNote");
+    let click = this.btnAdd;  
+    // pressing the enter key should also work
+    this.txtAdd = document.querySelector("#txtAddNote");
+    let enter = this.txtAdd.addEventListener("keyup", function (e) {
+    if (e.keyCode == 13) {
+        // Do something
+        click.click();
+    }
+});
+      
     this.btnAdd.addEventListener("click", this.createNote.bind(this));
-      //binden dient om de content van this 
-    // this.loadNotesFromStorage();
+      //binden dient om de content van this ...
+    this.loadNotesFromStorage();
   }
   
   loadNotesFromStorage() {
