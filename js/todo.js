@@ -9,12 +9,14 @@ class Note {
     let newNote = document.createElement('div');
     let txt = document.createElement('p');
     let remove = document.createElement('a');
-
+    // steek txt en remove in note
+    newNote.append(txt);
+    newNote.append(remove);
+     
+    txt.textContent = title;
+    remove.textContent = "remove";
     
     
-      
-      
-      
     a.addEventListener('click', this.remove.bind(newNote));
     let txtInput = document.getElementById("txtAddNote").value;
     return newNote;
