@@ -5,11 +5,18 @@ class Note {
   }
   
   createElement(title){
+    //creeer de elementen in de div
     let newNote = document.createElement('div');
+    let txt = document.createElement('p');
+    let remove = document.createElement('a');
+
+    
+    
+      
+      
+      
     a.addEventListener('click', this.remove.bind(newNote));
-      
     let txtInput = document.getElementById("txtAddNote").value;
-      
     return newNote;
   }
   
@@ -36,12 +43,10 @@ class App {
   
     // HINT🤩
     // clicking the button should work
-    document.querySelector("#btnAddNote").addEventListener('click', function() {
-        console.log("geklikt");
-    });
     // pressing the enter key should also work
-    // this.btnAdd = ???
-    //this.btnAdd.addEventListener("click", this.createNote.bind(this));
+    this.btnAdd = document.querySelector("#btnAddNote");
+    this.btnAdd.addEventListener("click", this.createNote.bind(this));
+      //binden dient om de content van this 
     // this.loadNotesFromStorage();
   }
   
@@ -57,7 +62,7 @@ class App {
     // HINT🤩
     // note.add();
     // note.saveToStorage();
-    // this.reset();
+    // this.reset(); verwijst naar de app klasse
   }
   
   reset(){
