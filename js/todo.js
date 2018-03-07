@@ -77,7 +77,7 @@ class App {
   }
   
   reset(){
-    // this function should reset the form 
+    document.getElementsByClassName("reset").reset();
   }
   
 }
